@@ -1,0 +1,46 @@
+In JavaScript, let, var, and const are used to declare variables, but they differ in how they behave in terms of scope, hoisting, and reassignment.
+
+Let’s break it down simply:
+
+✅ var, let, and const – No Data Type Required
+Unlike Java or C++, JavaScript is dynamically typed, so you don’t declare a type (int, String, etc.). You just write:
+
+
+let name = "Muneer";       // String
+var age = 25;              // Number
+const isTester = true;     // Boolean
+JavaScript figures out the type at runtime.
+
+🔍 Difference Between var, let, and const
+
+Feature	var	let	const
+Scope	Function-scoped	Block-scoped {}	Block-scoped {}
+Hoisting	Yes (initialized as undefined)	Yes (but not initialized)	Yes (but not initialized)
+Reassignable	✅ Yes	✅ Yes	❌ No (constant after assignment)
+Redeclarable	✅ Yes (in same scope)	❌ No	❌ No
+🧠 Examples:
+
+function test() {
+  if (true) {
+    var x = 10;
+    let y = 20;
+    const z = 30;
+  }
+  console.log(x); // ✅ Works (var is function-scoped)
+  // console.log(y); ❌ Error (let is block-scoped)
+  // console.log(z); ❌ Error (const is block-scoped)
+}
+✅ Best Practice (Which one should you use?)
+➡️ Use const by default.
+If you don’t plan to reassign the variable, use const. It's safer and avoids bugs.
+
+➡️ Use let when you know you’ll reassign it.
+For example, loop counters, dynamic values.
+
+❌ Avoid var — it’s outdated and can lead to unexpected issues due to hoisting and function-scoping.
+
+🔔 Quick Tip:
+
+const name = "Muneer";   // Good ✅
+let counter = 0;         // Good ✅
+var globalVar = true;    // Avoid ❌
