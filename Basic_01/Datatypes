@@ -1,0 +1,47 @@
+ JavaScript does have data types, but they work a bit differently from statically typed languages like Java. In JS, you don't explicitly declare data types, but variables hold values of certain types dynamically.
+
+✅ JavaScript Data Types (as per latest standards)
+🔹 1. Primitive Data Types (Immutable)
+These are the most basic types — their values are copied when assigned.
+
+
+Type	Example
+String	"Hello", 'JS', \Hi``
+Number	123, 3.14, -42
+Boolean	true, false
+BigInt	12345678901234567890n
+Undefined	A variable not assigned a value
+Null	Intentional absence of value
+Symbol	Symbol('id') — for unique identifiers
+🔸 2. Non-Primitive / Reference Types
+These types can store multiple values and are mutable.
+
+
+Type	Example
+Object	{ name: "Muneer", age: 25 }
+Array	[1, 2, 3]
+Function	function() {} or arrow ()=>{}
+Date	new Date()
+RegExp	/abc/
+Map, Set, WeakMap, WeakSet — also objects	
+🧠 Quick Examples:
+
+let name = "Muneer";          // String
+let age = 25;                 // Number
+let isQA = true;              // Boolean
+let nothing = null;          // Null
+let notAssigned;             // Undefined
+let big = 123456789n;        // BigInt
+let id = Symbol("id");       // Symbol
+
+let person = { name: "Muneer", role: "Tester" }; // Object
+let skills = ["Java", "Selenium", "JS"];         // Array
+let greet = function() { return "Hi" };          // Function
+✅ Type Checking
+You can check the type of any variable using typeof:
+
+
+console.log(typeof name);     // "string"
+console.log(typeof age);      // "number"
+console.log(typeof person);   // "object"
+console.log(typeof notAssigned); // "undefined"
