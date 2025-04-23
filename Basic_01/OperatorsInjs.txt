@@ -1,0 +1,62 @@
+✅ 1. Arithmetic Operators
+Used to perform basic mathematical operations.
+
+
+Operator	Description	Example
++	Addition	a + b
+-	Subtraction	a - b
+*	Multiplication	a * b
+/	Division	a / b
+%	Modulus (remainder)	a % b
+++	Increment	a++
+--	Decrement	a--
+
+
+✅ 2. Assignment Operators
+Operator	Description	Example
+=	Assign	x = 10
++=	Add and assign	x += 5
+-=	Subtract and assign	x -= 5
+*=	Multiply and assign	x *= 2
+/=	Divide and assign	x /= 2
+%=	Modulus and assign	x %= 3
+
+
+✅ 3. Comparison Operators
+Operator	Description	Example
+==	Equal to (loose)	x == "5"
+===	Equal to (strict)	x === 5
+!=	Not equal	x != 10
+!==	Not equal (strict)	x !== "10"
+>	Greater than	x > y
+<	Less than	x < y
+>=	Greater than or equal to	x >= y
+<=	Less than or equal to	x <= y
+
+
+✅ 4. Logical Operators
+Operator	Description	Example
+&&	Logical AND	a > 5 && b < 10
+`		`
+!	Logical NOT	!(a > b)
+
+✅ 5. Bitwise Operators (Rarely used, but powerful)
+
+Operator	Description
+&	AND
+`	`
+^	XOR
+~	NOT
+<<	Left shift
+>>	Right shift
+>>>	Unsigned right shift
+
+
+✅ 6. Ternary Operator
+let result = (a > b) ? "A is bigger" : "B is bigger";
+
+
+✅ 7. Type Operators
+Operator	Description	Example
+typeof	Returns type	typeof 123 → "number"
+instanceof	Checks object type	obj instanceof Array
