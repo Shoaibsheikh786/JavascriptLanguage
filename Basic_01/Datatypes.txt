@@ -13,10 +13,10 @@ BigInt	12345678901234567890n
 Undefined	A variable not assigned a value
 Null	Intentional absence of value
 Symbol	Symbol('id') — for unique identifiers
+
+
 🔸 2. Non-Primitive / Reference Types
 These types can store multiple values and are mutable.
-
-
 Type	Example
 Object	{ name: "Muneer", age: 25 }
 Array	[1, 2, 3]
@@ -37,11 +37,11 @@ let id = Symbol("id");       // Symbol
 let person = { name: "Muneer", role: "Tester" }; // Object
 let skills = ["Java", "Selenium", "JS"];         // Array
 let greet = function() { return "Hi" };          // Function
+
+
 ✅ Type Checking
 You can check the type of any variable using typeof:
-
-
-console.log(typeof name);     // "string"
-console.log(typeof age);      // "number"
-console.log(typeof person);   // "object"
+console.log(typeof name);        // "string"
+console.log(typeof age);         // "number"
+console.log(typeof person);      // "object"
 console.log(typeof notAssigned); // "undefined"
